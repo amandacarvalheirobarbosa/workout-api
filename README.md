@@ -20,10 +20,17 @@
 - pydantic: É uma biblioteca de validação de dados em Python, usada no FastAPI para validar dados de entrada e saída das APIs.
 
 4. Intalar alembic
+
 `pip install alembic`
 
 ### Rodando o projeto
 `uvicorn workout_api.main:app --reload`
+
+### Requerimentos
+
+Para trazer requerimentos:
+
+`pip freeze > requirements.txt`
 
 ### Documentações
 - FastApi: [https://fastapi.tiangolo.com]
