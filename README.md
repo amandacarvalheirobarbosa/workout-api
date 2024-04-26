@@ -1,0 +1,26 @@
+# API Work Out
+
+
+### Instalações necessárias:
+1. Crie um ambiente virtual com `pyenv` para o Python 3.11.4:
+
+`pyenv virtualenv 3.11.4 workoutapi`
+
+2. Ative o ambiente virtual recém-criado:
+
+`pyenv activate workoutapi`
+
+3. Instale as dependencias necenssárias usando `pip`:
+
+`pip install fastapi uvicorn sqlalchemy pydantic`
+
+- fastapi: É um framework web moderno e rápido para construir APIs com Python 3.7+.
+- uvicorn: É um servidor ASGI de alta performance, utilizado com o FastAPI para servir a aplicação web.
+- sqlalchemy: É uma biblioteca popular de mapeamento objeto-relacional (ORM) em Python, usada para trabalhar com bancos de dados relacionais de forma mais abstrata.
+- pydantic: É uma biblioteca de validação de dados em Python, usada no FastAPI para validar dados de entrada e saída das APIs.
+
+### Rodando o projeto
+`uvicorn workout_api.main:app --reload`
+
+### Documentações
+- FastApi: [https://fastapi.tiangolo.com]
