@@ -23,14 +23,46 @@
 
 `pip install alembic`
 
+
+### Rodando migrations
+Para subir o banco de dados:
+
+`make run-docker`
+
+Criando uma migration nova:
+
+`make create-migrations d="nome_da_migration"`
+
+Para criar o banco de dados:
+
+`make run-migrations`
+
+
 ### Rodando o projeto
 `uvicorn workout_api.main:app --reload`
 
+Ou se preferir usar o arquivo makefile: `make run`
+
+acesse: [http://localhost:8000/docs]
+
+
 ### Requerimentos
+Instalando:
+
+`pip install -r requirements.txt`
 
 Para trazer requerimentos:
 
 `pip freeze > requirements.txt`
 
+
 ### Documentações
 - FastApi: [https://fastapi.tiangolo.com]
+
+- Pydantic: [https://docs.pydantic.dev/latest/]
+
+- SQLAlchemy: [https://docs.sqlalchemy.org/en/20/]
+
+- Alembic: [https://alembic.sqlalchemy.org/en/latest/]
+
+- Fastapi-pagination: [https://uriyyo-fastapi-pagination.netlify.app/]
